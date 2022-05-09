@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo {
+  width: 4em;
+  margin-left: 2em;
+  margin-right: 9em;
+}
+
+.club-name {
+  font-family: 'Irish Grover', cursive;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1em;
+  font-size: 3.5rem;
+  text-shadow: 2px 3px 5px rgb(112, 29, 29);
+  letter-spacing: 2px;
+  padding-top: 1em;
+ 
+}
+
+.navbar {
+  background: url('./images/simple-footer.png') repeat center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 1.5em;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 21px 0px rgba(35, 33, 33, 1);
+  -moz-box-shadow: 0px 5px 21px 0px rgba(35, 33, 33, 1);
+  box-shadow: 0px 5px 21px 0px rgba(35, 33, 33, 1);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: relative;
+  padding: 0.2em;
+  color: white;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background-color: #c74f78;
+  height: .15em;
+  border-radius: 15px;
+  transition: .3s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+
+}
+
+.bar {
+  width: 2em;
+  height: .2em;
+  color: rgb(3, 3, 3);
+  margin: .5em;
+  border-radius: 20px;
+}
+
+.section {
+  background-color: rgba(0, 0, 0, 1);
+  background-image: linear-gradient(238deg, rgba(0, 0, 0, 1) 0%, rgba(51, 51, 51, 1) 100%);
+}
+
+.main-section {
+  color:whitesmoke;
+  text-shadow: 2px 3px 5px rgb(0, 0, 0);
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  margin-top: -7em;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  
+}
+
+.top-photo {
+  margin-top: 7em;
+  margin-bottom: 2em;
+  display: flex;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10%;
+  box-shadow: -1px 1px 39px 10px rgba(0, 0, 0, 1);
+}
+
+.middle-photo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10%;
+  box-shadow: -1px 1px 39px 10px rgba(0, 0, 0, 1);
+}
+
+.top-section-header {
+  text-align: center;
+  margin-bottom: 0.8em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  text-shadow: 2px 3px 5px rgb(112, 29, 29);
+  letter-spacing: 1.2px;
+  
+}
+
+.middle-section-header {
+  text-align: center;
+  margin-bottom: 0.8em;
+  text-shadow: 2px 3px 5px rgb(112, 29, 29);
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+}
+
+.top-section-info {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: center;
+
+}
+
+.middle-section-info {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: center;
+
+}
+
+strong {
+  font-weight: 700;
+}
+
+footer {
+  background: url('./images/simple-footer.png') repeat center;
+  display: table;
+  width: 100vw;
+  height: 8rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Arial', sans-serif;
+  font-size: .900rem;
+}
+
+.wrapper-footer {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer small {
+  color: #ccc;
+  letter-spacing: .025rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.footer-nav a {
+  color: #5aa2be;
+  text-decoration: none;
+  margin: 0 .5rem;
+  display: inline-block;
+}
+
+.footer-nav a:hover {
+  color: #f26896;
+  transition: color .15s ease-in-out;
+}
+
+.turnieje-main-section {
+  color:whitesmoke;
+  text-shadow: 2px 3px 5px rgb(0, 0, 0);
+}
+
+.turnieje-top-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.turnieje-top-photo {
+  margin-top: 7em;
+  margin-bottom: 2em;
+  display: flex;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10%;
+  box-shadow: -1px 1px 39px 10px rgba(0, 0, 0, 1);
+}
+
+.turnieje-top-section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: -1em;
+  padding-top: 1em;
+  font-family: 'Irish Grover', cursive;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 3px 5px rgb(112, 29, 29);
+  font-size: 4rem;
+}
+
+.turnieje-top-section-info {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: center;
+
+}
+
+.turnieje-top-section-subheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 2.5rem;
+  text-shadow: 2px 3px 5px rgb(112, 29, 29);
+}
+
+.bottom-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 4rem;
+  font-family: 'Irish Grover', cursive;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 3px 5px rgb(112, 29, 29);
+}
+
+.treningi-info {
+  display: flex;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 2rem;
+  color: rgb(241, 86, 86);
+}
+
+.wspolpraca-info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  font-size: 1.8rem;
+  margin: 1em;
+  letter-spacing: 0.05em;
+}
+
+.wspolpraca-list {
+  list-style-type: circle;
+  display: block;
+  margin-left: 4em;
+  font-size: 1.3rem;
+}
+
+.wspolpraca-list-items {
+  letter-spacing: .1em;
+  padding-top: 0.5em;
+}
+
+.wspolpraca-info-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: .05em;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  text-shadow: 2px 3px 5px rgb(112, 29, 29);
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo{
+    margin: 0;
+    height: 8vh;
+    width: 10vw;
+    object-fit: cover;
+    
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: 70%;    
+  }
+
+  ul {
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    background: url('./images/simple-footer.png') repeat center;
+    height: 72vh;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+    transition: 0.5s;
+
+  }
+
+  ul.active {
+    display: block;
+  }
+
+  .hamburger.active {
+    -webkit-transform:  translate(-30px, 0px);
+    -moz-transform:  translate(-30px, 0px);
+    -ms-transform:  translate(-30px, 0px);
+    -o-transform:  translate(-30px, 0px);
+    transform:  translate(-30px, 0px);
+  }
+
+  a {
+    letter-spacing: 1.3px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+  }
+
+  a:hover::after {
+    width: 0%;
+  }
+
+  .club-name {
+    font-size: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    text-align: center;
+  }
+  .main-section {
+    margin-top: -5em;
+  }
+  .turnieje-top-section-header {
+    font-size: 3rem;
+    margin-bottom: -1.5em;
+  }
+  .bottom-text {
+    font-size: 3rem;
+  }
+  .treningi-info {
+    font-size: 1.7rem;
+  }
+  .wspolpraca-info-bottom {
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+}
+
+.footer-nav a {
+  color: #5aa2be;
+  text-decoration: none;
+  margin: 0 .5rem;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+/* contact form */
+
+.contain {
+  background-color: #eee;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+div.form {
+  background-color: #eee;
+}
+.contact-wrapper {
+  margin: auto 0;
+}
+
+.submit-btn {
+  float: left;
+}
+.reset-btn {
+  float: right;
+}
+
+.form-headline:after {
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 10px;
+  border-bottom: 3px solid #ec1c24;
+}
+
+.highlight-text {
+  color: #ec1c24;
+}
+
+.hightlight-contact-info {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-text-grey {
+  font-weight: 500;
+}
+
+.email-info {
+    margin-top: 20px;
+}
+
+::-webkit-input-placeholder { 
+  font-family: 'Arial', sans-serif;
+}
+
+.required-input {
+  color: black;
+}
+@media (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.form-input:focus,
+textarea:focus{
+  outline: 1.5px solid #ec1c24;
+}
+
+.form-input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .wrapper > * {
+    padding: 2em 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+  color: #212d31;
+}
+
+.form {
+  background: #fff;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+form label {
+  display: block;
+}
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+.submit-btn,
+.form-input,
+textarea {
+  padding: 1em;
+}
+
+button, .submit-btn {
+  background: transparent;
+  border: 1px solid #ec1c24;
+  color: #ec1c24;
+  border-radius: 15px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+button:hover, .submit-btn:hover,
+button:focus , .submit-btn:focus{
+  background: #ec1c24;
+  outline: 0;
+  color: #eee;
+}
+.error {
+  color: #ec1c24;
+}
+

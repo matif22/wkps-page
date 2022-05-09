@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrocławski Klub Piłki Stołowej</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="./images/logo.png">
+            
+            <ul class=".nav-menu">
+                    <li><a href="index.html">O Nas</a></li>
+                    <li><a href="turnieje.html">Turnieje</a></li>
+                    <li><a href="treningi.html">Treningi</a></li>
+                    <li><a href="wspolpraca.html">Współpraca</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <img src="./images/hamburger-menu.svg" class="hamburger-icon">
+            </div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </img>
+        </nav>
+    </header>
+    <div class="contain">
+      <div class="background-div">
+      <div class="wrapper">
+    
+        <div class="form">
+          <h4>Kontakt</h4>
+          <h2 class="form-headline">Wyślij nam wiadomość</h2>
+          <form id="submit-form" action="">
+            <p>
+              <input id="name" class="form-input" type="text" placeholder="Imię*">
+              <small class="name-error"></small>
+            </p>
+            <p>
+              <input id="email" class="form-input" type="email" placeholder="E-mail*">
+              <small class="name-error"></small>
+            </p>
+            <p class="full-width">
+              <input id="company-name" class="form-input" type="text" placeholder="Nazwa Firmy*" required>
+              <small></small>
+            </p>
+            <p class="full-width">
+              <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Twoja wiadomość*" required></textarea>
+              <small></small>
+            </p>
+            <p class="full-width">
+              <input type="checkbox" id="checkbox" name="checkbox" checked> Tak, chcę otrzymać kontakt zwrotny
+            </p>
+            <p class="full-width">
+              <input type="submit" class="submit-btn" value="Wyślij" onclick="checkValidations()">
+              <button class="reset-btn" onclick="reset()">Reset</button>
+            </p>
+          </form>
+        </div>
+    
+        <div class="contacts contact-wrapper">
+    
+          <ul>
+            
+            <li><span class="highlight-text-grey"></span></li>
+            <span class="hightlight-contact-info">
+              <li class="email-info"><i aria-hidden="true"></i>Wrocławski Klub Piłki Stołowej
+                ul. Budziszyńska 34A/6
+                54-434 Wrocław<br> wkps.kontakt@gmail.com</li>
+              <li><i aria-hidden="true"></i> <span class="highlight-text">+48 507 308 215</span></li>
+            </span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <footer>
+        <div class="wrapper-footer">
+          <small>&copy;2022 <strong>Wrocławski Klub Piłki Stołowej</strong>, All Rights Reserved</small>
+          <nav class="footer-nav">
+            <a href="index.html">O nas</a>
+            <a href="wspolpraca.html">Współpraca</a>
+            <a href="kontakt.html">Kontakt</a>
+          </nav>
+        </div>
+      </footer>
+
+     
+<script src="script.js"></script>
+</body>
+</html>
