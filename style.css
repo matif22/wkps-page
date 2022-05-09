@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +23,7 @@ body {
 }
 
 .club-name {
-  font-family: 'Irish Grover', cursive;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 900;
   display: flex;
   justify-content: center;
@@ -63,6 +65,7 @@ a {
   position: relative;
   padding: 0.2em;
   color: white;
+  letter-spacing: 0.1em;
 }
 
 a::after {
@@ -215,14 +218,14 @@ footer small {
 }
 
 .footer-nav a {
-  color: #5aa2be;
+  color:whitesmoke;
   text-decoration: none;
   margin: 0 .5rem;
   display: inline-block;
 }
 
 .footer-nav a:hover {
-  color: #f26896;
+  color: rgb(156, 152, 152);
   transition: color .15s ease-in-out;
 }
 
@@ -258,7 +261,7 @@ footer small {
   text-align: center;
   margin-bottom: -1em;
   padding-top: 1em;
-  font-family: 'Irish Grover', cursive;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
   text-shadow: 2px 3px 5px rgb(112, 29, 29);
@@ -291,7 +294,7 @@ footer small {
   margin-top: 2em;
   margin-bottom: 2em;
   font-size: 4rem;
-  font-family: 'Irish Grover', cursive;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
   text-shadow: 2px 3px 5px rgb(112, 29, 29);
@@ -417,7 +420,7 @@ footer small {
 }
 
 .footer-nav a {
-  color: #5aa2be;
+  color: whitesmoke;
   text-decoration: none;
   margin: 0 .5rem;
   display: inline-block;
