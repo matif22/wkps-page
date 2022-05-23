@@ -1,2 +1,9 @@
 # wkps-page
- Official website of WKPS foosball club
+Project of website for WKPS foosball club
+
+Check how it works here: www.wkpstemplate.rf.gd
+
+Technologies used:
+- HTML
+- CSS
+- JAVASCRIPT
